@@ -62,7 +62,6 @@
             resources.GetString("cmbOperador.Items2"),
             resources.GetString("cmbOperador.Items3")});
             this.cmbOperador.Name = "cmbOperador";
-            this.cmbOperador.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnOperar
             // 
@@ -109,7 +108,7 @@
             // 
             resources.ApplyResources(this.lblResultado, "lblResultado");
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Click += new System.EventHandler(this.lblResultado_Click);
+            
             // 
             // LaCalculadora
             // 
@@ -130,7 +129,6 @@
             this.Name = "LaCalculadora";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

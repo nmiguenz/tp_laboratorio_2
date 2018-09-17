@@ -18,6 +18,9 @@ namespace MiCalculadora
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Elimina los datos (texto/operador) contenidos en cada uno de los controles 
+        /// </summary>
         private void Limpiar()
         {
             txtNumero1.Text = "";
@@ -31,16 +34,21 @@ namespace MiCalculadora
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Limpia el contenido de los controles utilizados
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             Limpiar();
         }
 
+        /// <summary>
+        /// Realiza la operación seleccionada en el combo box operador
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
             Numero numero1 = new Numero(txtNumero1.Text);
@@ -53,6 +61,11 @@ namespace MiCalculadora
             lblResultado.Text = total + "";
         }
 
+        /// <summary>
+        /// Cierra el programa luego de preguntarnos (SI/NO)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             DialogResult cerrar;
@@ -61,19 +74,25 @@ namespace MiCalculadora
                 this.Close();
         }
 
+        /// <summary>
+        /// Convierte el texto del lebel a binario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
             lblResultado.Text = Numero.DecimalBinario(lblResultado.Text);
         }
 
+        /// <summary>
+        /// Convierte el contenido binario del label a decimal
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
             lblResultado.Text = Numero.BinarioDecimal(lblResultado.Text);
         }
-
-        private void lblResultado_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

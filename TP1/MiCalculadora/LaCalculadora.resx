@@ -119,20 +119,27 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txtNumero1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Microsoft Sans Serif, 23pt</value>
   </data>
   <data name="txtNumero1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 50</value>
+    <value>76, 62</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtNumero1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtNumero1.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="txtNumero1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 45</value>
+    <value>223, 54</value>
   </data>
   <data name="txtNumero1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="txtNumero1.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
   <data name="&gt;&gt;txtNumero1.Name" xml:space="preserve">
     <value>txtNumero1</value>
@@ -147,19 +154,25 @@
     <value>8</value>
   </data>
   <data name="txtNumero2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Microsoft Sans Serif, 23pt</value>
   </data>
   <data name="txtNumero2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>406, 50</value>
+    <value>541, 62</value>
+  </data>
+  <data name="txtNumero2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="txtNumero2.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="txtNumero2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 45</value>
+    <value>223, 54</value>
   </data>
   <data name="txtNumero2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="txtNumero2.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
   <data name="&gt;&gt;txtNumero2.Name" xml:space="preserve">
     <value>txtNumero2</value>
@@ -174,7 +187,7 @@
     <value>7</value>
   </data>
   <data name="cmbOperador.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Microsoft Sans Serif, 25pt</value>
   </data>
   <data name="cmbOperador.Items" xml:space="preserve">
     <value>+</value>
@@ -189,13 +202,16 @@
     <value>/</value>
   </data>
   <data name="cmbOperador.Location" type="System.Drawing.Point, System.Drawing">
-    <value>273, 67</value>
+    <value>364, 70</value>
+  </data>
+  <data name="cmbOperador.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="cmbOperador.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 28</value>
+    <value>112, 46</value>
   </data>
   <data name="cmbOperador.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;cmbOperador.Name" xml:space="preserve">
     <value>cmbOperador</value>
@@ -210,10 +226,13 @@
     <value>6</value>
   </data>
   <data name="btnOperar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 124</value>
+    <value>76, 153</value>
+  </data>
+  <data name="btnOperar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btnOperar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 36</value>
+    <value>224, 44</value>
   </data>
   <data name="btnOperar.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -233,15 +252,17 @@
   <data name="&gt;&gt;btnOperar.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnLimpiar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnLimpiar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 124</value>
+    <value>307, 153</value>
+  </data>
+  <data name="btnLimpiar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btnLimpiar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 36</value>
+    <value>224, 44</value>
   </data>
   <data name="btnLimpiar.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -265,10 +286,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnCerrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>406, 124</value>
+    <value>541, 153</value>
+  </data>
+  <data name="btnCerrar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btnCerrar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 36</value>
+    <value>224, 44</value>
   </data>
   <data name="btnCerrar.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -292,10 +316,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnConvertirABinario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 181</value>
+    <value>76, 223</value>
+  </data>
+  <data name="btnConvertirABinario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btnConvertirABinario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>256, 36</value>
+    <value>341, 44</value>
   </data>
   <data name="btnConvertirABinario.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -319,10 +346,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnConvertirADecimal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>318, 181</value>
+    <value>424, 223</value>
+  </data>
+  <data name="btnConvertirADecimal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btnConvertirADecimal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>256, 36</value>
+    <value>341, 44</value>
   </data>
   <data name="btnConvertirADecimal.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -342,20 +372,27 @@
   <data name="&gt;&gt;btnConvertirADecimal.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="lblResultado.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lblResultado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>253, 17</value>
+    <value>109, 4</value>
+  </data>
+  <data name="lblResultado.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblResultado.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
   </data>
   <data name="lblResultado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>272, 43</value>
   </data>
   <data name="lblResultado.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="lblResultado.Text" xml:space="preserve">
-    <value>label1</value>
+    <value>
+</value>
+  </data>
+  <data name="lblResultado.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;lblResultado.Name" xml:space="preserve">
     <value>lblResultado</value>
@@ -370,10 +407,13 @@
     <value>0</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>273, 3</value>
+    <value>364, 4</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 41</value>
+    <value>401, 50</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -394,10 +434,16 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>629, 274</value>
+    <value>839, 314</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
