@@ -99,7 +99,7 @@ namespace Entidades_2018
         {
             foreach (Producto producto in c.productos)
             {
-                if (producto == p)
+                if (producto == p|| c.productos.Count == c.espacioDisponible )
                     return c;
             }
 

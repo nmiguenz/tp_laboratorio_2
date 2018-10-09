@@ -17,3 +17,9 @@ C:\Users\Nico\Desktop\TP2\TP-02\Entidades\obj\Debug\Entidades.csprojAssemblyRefe
 C:\Users\Nico\Desktop\TP2\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Nico\Desktop\TP2\TP-02\Entidades\obj\Debug\Entidades.dll
 C:\Users\Nico\Desktop\TP2\TP-02\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Nico\Desktop\Laboratorio 2\TP2\TP-02\Entidades\bin\Debug\Entidades.dll
+C:\Users\Nico\Desktop\Laboratorio 2\TP2\TP-02\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Nico\Desktop\Laboratorio 2\TP2\TP-02\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Nico\Desktop\Laboratorio 2\TP2\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Nico\Desktop\Laboratorio 2\TP2\TP-02\Entidades\obj\Debug\Entidades.dll
+C:\Users\Nico\Desktop\Laboratorio 2\TP2\TP-02\Entidades\obj\Debug\Entidades.pdb
