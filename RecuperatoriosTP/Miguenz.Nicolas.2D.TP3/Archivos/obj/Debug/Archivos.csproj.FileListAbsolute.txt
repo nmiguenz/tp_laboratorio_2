@@ -1,0 +1,9 @@
+C:\Users\Nico\Desktop\RecuperatoriosTP\Miguenz.Nicolas.2D.TP3\Archivos\bin\Debug\Archivos.dll
+C:\Users\Nico\Desktop\RecuperatoriosTP\Miguenz.Nicolas.2D.TP3\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Nico\Desktop\RecuperatoriosTP\Miguenz.Nicolas.2D.TP3\Archivos\bin\Debug\Excepciones.dll
+C:\Users\Nico\Desktop\RecuperatoriosTP\Miguenz.Nicolas.2D.TP3\Archivos\bin\Debug\Excepciones.pdb
+C:\Users\Nico\Desktop\RecuperatoriosTP\Miguenz.Nicolas.2D.TP3\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\Nico\Desktop\RecuperatoriosTP\Miguenz.Nicolas.2D.TP3\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\Nico\Desktop\RecuperatoriosTP\Miguenz.Nicolas.2D.TP3\Archivos\obj\Debug\Archivos.csproj.CopyComplete
+C:\Users\Nico\Desktop\RecuperatoriosTP\Miguenz.Nicolas.2D.TP3\Archivos\obj\Debug\Archivos.dll
+C:\Users\Nico\Desktop\RecuperatoriosTP\Miguenz.Nicolas.2D.TP3\Archivos\obj\Debug\Archivos.pdb

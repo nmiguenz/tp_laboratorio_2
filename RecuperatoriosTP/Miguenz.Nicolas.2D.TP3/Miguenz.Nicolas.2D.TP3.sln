@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archivos", "Archivos\Archiv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excepciones", "Excepciones\Excepciones.csproj", "{3474E433-5CBE-41A8-A6BD-D0FF04ABF3EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoTest", "ProyectoTest\ProyectoTest.csproj", "{9BB9A3BF-45BA-4284-8BF4-A413220CA2B9}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VistaConsola", "VistaConsola\VistaConsola.csproj", "{2E619A70-6A34-4550-A8F3-73D7E94E63B3}"
 EndProject
 Global
@@ -35,6 +37,10 @@ Global
 		{3474E433-5CBE-41A8-A6BD-D0FF04ABF3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3474E433-5CBE-41A8-A6BD-D0FF04ABF3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3474E433-5CBE-41A8-A6BD-D0FF04ABF3EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BB9A3BF-45BA-4284-8BF4-A413220CA2B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BB9A3BF-45BA-4284-8BF4-A413220CA2B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BB9A3BF-45BA-4284-8BF4-A413220CA2B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BB9A3BF-45BA-4284-8BF4-A413220CA2B9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2E619A70-6A34-4550-A8F3-73D7E94E63B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2E619A70-6A34-4550-A8F3-73D7E94E63B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E619A70-6A34-4550-A8F3-73D7E94E63B3}.Release|Any CPU.ActiveCfg = Release|Any CPU

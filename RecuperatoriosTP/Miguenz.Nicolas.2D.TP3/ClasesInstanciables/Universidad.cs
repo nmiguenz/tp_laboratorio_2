@@ -261,7 +261,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Se agrega un alumno si este no estaba previamente cargado en la universidad
+        /// Agrega un alumno si este no estaba previamente cargado en la universidad
         /// </summary>
         /// <param name="u"></param>
         /// <param name="a"></param>
@@ -277,7 +277,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Se agrega un profesor si este no estaba previamente cargado en la universidad
+        /// Agrega un profesor si este no estaba previamente cargado en la universidad
         /// </summary>
         /// <param name="u"></param>
         /// <param name="i"></param>
