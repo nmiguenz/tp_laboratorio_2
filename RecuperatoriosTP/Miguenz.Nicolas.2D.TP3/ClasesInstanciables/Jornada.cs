@@ -94,7 +94,7 @@ namespace ClasesInstanciables
         /// </summary>
         /// <param name="jornada"></param>
         /// <returns></returns>
-        public bool Guardar(Jornada jornada)
+        public static bool Guardar(Jornada jornada)
         {
             Texto archivoText = new Texto();
 

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using ClasesInstanciables;
-using ClasesAbstractas;
+using EntidadesAbstractas;
 using Excepciones;
 
 namespace VistaConsola

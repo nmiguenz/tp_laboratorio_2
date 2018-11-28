@@ -7,16 +7,17 @@ using System.Text.RegularExpressions;
 
 using Excepciones;
 
-namespace ClasesAbstractas
+namespace EntidadesAbstractas
 {
-    public enum ENacionalidad
-    {
-        Argentino,
-        Extranjero
-    }
 
     public abstract class Persona
     {
+        public enum ENacionalidad
+        {
+            Argentino,
+            Extranjero
+        }
+
         #region ATRIBUTOS
         private string nombre;
         private string apellido;
