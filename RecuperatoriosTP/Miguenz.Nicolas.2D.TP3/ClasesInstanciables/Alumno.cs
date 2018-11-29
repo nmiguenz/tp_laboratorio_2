@@ -82,7 +82,7 @@ namespace ClasesInstanciables
         /// <returns></returns>
         protected override string ParticiparEnClase()
         {
-            return String.Format("TOMA CLASES DE: " + this.claseQueToma.ToString());
+            return String.Format("TOMA CLASES DE: {0}", this.claseQueToma.ToString());
         }
 
         /// <summary>
@@ -117,7 +117,10 @@ namespace ClasesInstanciables
         /// <returns>True si no toma la clase</returns>
         public static bool operator != (Alumno a, Universidad.EClases clase)
         {
-            return a.claseQueToma != clase;
+            //Es Lo mismo escribir esto??
+            // a.claseQueToma != clase
+
+            return !(a.claseQueToma == clase);
         }
         #endregion
     }

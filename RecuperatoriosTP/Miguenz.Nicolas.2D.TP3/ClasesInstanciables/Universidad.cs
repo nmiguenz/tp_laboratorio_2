@@ -79,7 +79,7 @@ namespace ClasesInstanciables
             }
             set
             {
-                Jornadas[i] = value;
+                this.Jornadas[i] = value;
             }
         }
         #endregion
@@ -106,7 +106,7 @@ namespace ClasesInstanciables
         {
             XML<Universidad> guardarXml = new XML<Universidad>();
             
-            return guardarXml.Guardar("Universidad.xml", uni);
+            return (guardarXml.Guardar("Universidad.xml", uni));
         }
 
         /// <summary>
@@ -118,24 +118,11 @@ namespace ClasesInstanciables
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine("ALUMNOS");
-            foreach (Alumno alumno in uni.Alumnos)
-            {
-                sb.AppendLine(alumno.ToString());
-            }
-
-            sb.AppendLine("JORNADAS");
-            foreach (Jornada jornada in uni.Jornadas)
+            foreach(Jornada jornada in uni.Jornadas)
             {
                 sb.AppendLine(jornada.ToString());
             }
 
-            sb.AppendLine("PROFESORES");
-            foreach (Profesor profesor in uni.Instructores)
-            {
-                sb.AppendLine(profesor.ToString());
-            }
-            
             return sb.ToString();
         }
 
@@ -253,7 +240,7 @@ namespace ClasesInstanciables
             foreach(Alumno alumno in g.Alumnos)
             {
                 if (alumno == clases)
-                    nuevaJornada.Alumnos.Add(alumno);
+                    nuevaJornada += alumno;
             }
 
             g.Jornadas.Add(nuevaJornada);
@@ -284,11 +271,9 @@ namespace ClasesInstanciables
         /// <returns>La universidad</returns>
         public static Universidad operator +(Universidad u, Profesor i)
         {
-            foreach(Profesor profesor in u.Instructores)
-            {
-                if (profesor != i)
-                    u.Instructores.Add(i);
-            }
+            if (u != i)
+                u.Instructores.Add(i);
+
             return u; 
         }
         #endregion

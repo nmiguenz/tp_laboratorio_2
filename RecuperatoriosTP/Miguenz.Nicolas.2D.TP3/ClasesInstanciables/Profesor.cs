@@ -82,7 +82,16 @@ namespace ClasesInstanciables
         /// <returns></returns>
         protected override string ParticiparEnClase()
         {
-            return String.Format("CLASES DEL DÍA: " + this.clasesDelDia);
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine("CLASES DEL DÍA: ");
+
+            foreach (Universidad.EClases clase in this.clasesDelDia)
+            {
+                sb.AppendLine(clase.ToString());
+            }
+
+            return sb.ToString();
         }
 
         /// <summary>

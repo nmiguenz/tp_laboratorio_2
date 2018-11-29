@@ -98,7 +98,7 @@ namespace ClasesInstanciables
         {
             Texto archivoText = new Texto();
 
-            return archivoText.Guardar("Jornada.txt", jornada.ToString());
+            return (archivoText.Guardar("Jornada.txt", jornada.ToString()));
         }
 
         /// <summary>
@@ -107,7 +107,7 @@ namespace ClasesInstanciables
         /// <returns>Ldatos de la jornada en formato string</returns>
         public string Leer()
         {
-            string datosJornada;
+            string datosJornada = null;
             Texto archivoText = new Texto();
 
             archivoText.Leer("Jornada.txt", out datosJornada);
@@ -123,7 +123,6 @@ namespace ClasesInstanciables
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine("JORNADA");
             sb.AppendLine("CLASES DE " + this.Clases);
             sb.AppendLine("POR " + this.Instructor);
             sb.AppendLine("ALUMNOS");
