@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 using Archivos;
 using Excepciones;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace ClasesInstanciables
 {

@@ -153,12 +153,12 @@ namespace EntidadesAbstractas
         /// Retorna los datos de la persona en formato String
         /// </summary>
         /// <returns></returns>
-        public virtual new string ToString()
+        public virtual string ToString()
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine(String.Format("NOMBRE COMPLETO: {0} {1}", this.Nombre, this.Apellido));
-            sb.AppendLine("NACIONALIDAD: " + this.Nacionalidad);
+            sb.AppendFormat("NOMBRE COMPLETO: {0} {1} ", this.Nombre, this.Apellido);
+            sb.AppendLine("NACIONALIDAD: " + this.Nacionalidad.ToString());
             sb.AppendLine("DNI: " + this.DNI);
 
             return sb.ToString();
@@ -212,13 +212,17 @@ namespace EntidadesAbstractas
         /// <returns></returns>
         private string ValidarNombreApellido(string dato)
         {
-            string pattern = "/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[/s]*)+$/";
-            if (dato.Length < 30)
+            if(dato.Length < 30)
             {
-                if (Regex.IsMatch(dato, pattern))
-                    return dato;
+                foreach (char caracter in dato)
+                {
+                    if (!(char.IsLetter(caracter)))
+                    {
+                        return "No es Nombre o apellido válido";
+                    }
+                }
             }
-            return "";
+            return dato;
         }
 #endregion
     }

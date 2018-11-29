@@ -60,8 +60,8 @@ namespace EntidadesAbstractas
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine(base.ToString());
-            sb.AppendLine("LEGAJO NÚMERO: " + this.legajo);
+            sb.Append(base.ToString());
+            sb.AppendFormat("LEGAJO NÚMERO: " + this.legajo);
 
             return sb.ToString();
         }
@@ -82,10 +82,9 @@ namespace EntidadesAbstractas
         {
             bool retorno = false;
 
-            if (pg1.Equals(pg2))
-                if (pg1.legajo == pg2.legajo || pg1.DNI == pg2.DNI)
-                    retorno = true;
-
+            if (pg1.Equals(pg2) && pg1.legajo == pg2.legajo || pg1.DNI == pg2.DNI)
+                retorno = true;
+               
             return retorno;
         }
 

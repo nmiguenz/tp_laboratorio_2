@@ -123,8 +123,8 @@ namespace ClasesInstanciables
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine("CLASES DE " + this.Clases);
-            sb.AppendLine("POR " + this.Instructor);
+            sb.AppendLine("CLASES DE " + this.Clases.ToString());
+            sb.AppendLine("POR " + this.Instructor.ToString());
             sb.AppendLine("ALUMNOS");
             sb.AppendLine("");
 
