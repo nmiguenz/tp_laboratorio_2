@@ -105,7 +105,7 @@ namespace EntidadesAbstractas
         /// </summary>
         public Persona()
         {
-
+            this.dni = 0;
         }
 
         /// <summary>
@@ -114,11 +114,11 @@ namespace EntidadesAbstractas
         /// <param name="nombre"></param>
         /// <param name="apellido"></param>
         /// <param name="nacionalidad"></param>
-        public Persona(string nombre, string apellido, ENacionalidad nacionalidad) : this()
+        public Persona(string nombre, string apellido, ENacionalidad nacionalidad) 
         {
-            this.Nombre = nombre;
-            this.Apellido = apellido;
-            this.Nacionalidad = nacionalidad;
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.nacionalidad = nacionalidad;
         }
 
         /// <summary>
@@ -164,12 +164,13 @@ namespace EntidadesAbstractas
             return sb.ToString();
         }
 
+
         /// <summary>
-        /// Valida el DNI segun la nacionalidad
+        /// Validad el DNi, con dato tipo INT 
         /// </summary>
-        /// <param name="nacionalidad"></param>
-        /// <param name="dni"></param>
-        /// <returns>Si es correcto retorna el DNI. Error lanza la excepción NacionalidadInvalidaException</returns>
+        /// <param name="nacionalidad"> valor campo _nacionalidad</param>
+        /// <param name="dato">valor int para _dni</param>
+        /// <returns></returns>
         private int ValidarDni(ENacionalidad nacionalidad, int dato)
         {
             switch (nacionalidad)
@@ -197,7 +198,7 @@ namespace EntidadesAbstractas
         private int ValidarDni(ENacionalidad nacionalidad, string dato)
         {
             int documento;
-            if(int.TryParse(dato, out int dni))
+            if (int.TryParse(dato, out int dni))
             {
                 documento = this.ValidarDni(nacionalidad, dni);
                 return documento;
@@ -212,7 +213,7 @@ namespace EntidadesAbstractas
         /// <returns></returns>
         private string ValidarNombreApellido(string dato)
         {
-            if(dato.Length < 30)
+            if (dato.Length < 30)
             {
                 foreach (char caracter in dato)
                 {
@@ -224,6 +225,6 @@ namespace EntidadesAbstractas
             }
             return dato;
         }
-#endregion
+        #endregion
     }
 }

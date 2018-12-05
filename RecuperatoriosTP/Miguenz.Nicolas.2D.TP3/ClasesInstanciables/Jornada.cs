@@ -82,7 +82,7 @@ namespace ClasesInstanciables
         /// <param name="instructor"></param>
         public Jornada(Universidad.EClases clase, Profesor instructor) : this()
         {
-            this.Clases = Clases;
+            this.Clases = clase;
             this.Instructor = instructor;
         }
         #endregion
@@ -166,7 +166,11 @@ namespace ClasesInstanciables
             foreach(Alumno alumno in j.alumnos)
             {
                 if (alumno == a)
+                {
                     retorno = true;
+                    break;
+                }
+                    
             }
 
             return retorno;

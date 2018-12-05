@@ -18,7 +18,7 @@ namespace EntidadesAbstractas
         /// </summary>
         public Universitario() : base()
         {
-
+            this.legajo = 0;
         }
 
         /// <summary>

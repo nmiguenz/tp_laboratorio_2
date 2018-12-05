@@ -77,11 +77,18 @@ namespace ClasesInstanciables
         {
             get
             {
-                return Jornadas[i];
+                if (i >= 0 && i < this.jornada.Count)
+                {
+                    return this.jornada[i];
+                }
+                else
+                {
+                    return null;
+                }
             }
             set
             {
-                this.Jornadas[i] = value;
+                this.jornada[i] = value;
             }
         }
         #endregion
@@ -204,13 +211,26 @@ namespace ClasesInstanciables
         /// <returns>Si lo encuentra devuelve al profesor. Si no lanza una excepción</returns>
         public static Profesor operator == (Universidad u, EClases clase)
         {
-            foreach(Profesor instructor in u.Instructores)
-            {
-                if (instructor == clase)
-                    return instructor;
-            }
+            Profesor retorno = new Profesor();
+            int i;
+            bool posicion = false;
 
-            throw new SinProfesorException();
+
+            for (i = 0; i < u.profesores.Count; i++)
+            {
+                if (u.profesores[i] == clase)
+                {
+                    retorno = u.profesores[i];
+                    posicion = true;
+                    break;
+                }
+            }
+            if (posicion == false)
+            {
+
+                throw new SinProfesorException();
+            }
+            return retorno;
         }
 
         /// <summary>
@@ -221,12 +241,19 @@ namespace ClasesInstanciables
         /// <returns>Si lo encuentra devuelve el profesor. Si no, lanza una excepción</returns>
         public static Profesor operator != (Universidad u, EClases clase)
         {
-            foreach (Profesor instructor in u.Instructores)
+            Profesor retorno = new Profesor();
+            int i;
+
+            for (i = 0; i < u.profesores.Count; i++)
             {
-                if (instructor != clase)
-                    return instructor;
+                if (u.profesores[i] != clase)
+                {
+                    retorno = u.profesores[i];
+                    break;
+                }
             }
-            throw new SinProfesorException();
+
+            return retorno;
         }
 
         /// <summary>
@@ -257,11 +284,15 @@ namespace ClasesInstanciables
         /// <returns>La universidad</returns>
         public static Universidad operator +(Universidad u, Alumno a)
         {
-            foreach(Alumno alumno in u.Alumnos)
+            if (u == a)
             {
-                if (alumno != a)
-                    u.Alumnos.Add(a);
+                throw new AlumnoRepetidoException();
             }
+            else
+            {
+                u.alumnos.Add(a);
+            }
+
             return u;
         }
 

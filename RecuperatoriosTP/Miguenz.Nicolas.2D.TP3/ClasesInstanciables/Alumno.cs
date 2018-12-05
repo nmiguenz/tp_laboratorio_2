@@ -24,7 +24,7 @@ namespace ClasesInstanciables
         /// </summary>
         public Alumno() : base()
         {
-
+            
         }
 
         /// <summary>
@@ -70,7 +70,22 @@ namespace ClasesInstanciables
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine(base.MostrarDatos());
-            sb.AppendLine("ESTADO DE CUENTA: " + this.estadoCuenta.ToString());
+
+            switch (this.estadoCuenta)
+            {
+                case EEstadoCuenta.AlDia:
+                    sb.AppendLine("\nEstado de Cuenta: Cuota al dia");
+                    break;
+                case EEstadoCuenta.Becado:
+                    sb.AppendLine("\nEstado de Cuenta: Becado");
+                    break;
+                case EEstadoCuenta.Deudor:
+                    sb.AppendLine("\nEstado de Cuenta:Deudor");
+                    break;
+                default:
+                    break;
+            }
+
             sb.AppendLine(this.ParticiparEnClase());
 
             return sb.ToString();
